@@ -3,11 +3,11 @@ This project consists of files used to create an automated ELK stack deployment.
 
 The files in this repository were used to configure the network depicted below.
 
-[Images/diagram_filename.png]
+![ELK Network Diagram](./Diagrams/ELK Stack Diagram.png "ELK Network Diagram")
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-  [yaml files/install_elk.yml]
+[install-elk.yml](./Ansible/install-elk.yml) 
 
 This document contains the following details:
 - Description of the Topology
@@ -40,8 +40,7 @@ The configuration details of each machine may be found below.
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses: 75.168.207.179
-- _TODO: Add whitelisted IP addresses_
+Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP address: 75.168.207.179 (our local IP address)
 
 Machines within the network can only be accessed by each other.
 
@@ -67,7 +66,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+!["docker ps" output](./Screenshots/dockerps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines: Web-1 (10.0.0.5) and Web-2 (10.0.0.6)
